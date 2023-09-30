@@ -19,7 +19,8 @@ char invertCharacterCase(char myChar)// gomaa el  sherbini
 	else
 		return toupper(myChar);*/
 
-	return (myChar == toupper(myChar)) ? tolower(myChar) : toupper(myChar);
+	//return (myChar == toupper(myChar)) ? tolower(myChar) : toupper(myChar);
+	return isupper(myChar) ? tolower(myChar) : toupper(myChar);
 }
 
 
