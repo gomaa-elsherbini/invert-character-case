@@ -14,10 +14,12 @@ char readcharacter()
 
 char invertCharacterCase(char myChar)// gomaa el  sherbini
 {
-	if (myChar == toupper(myChar))
+	/*if (myChar == toupper(myChar))
 		return tolower(myChar);
 	else
-		return toupper(myChar);
+		return toupper(myChar);*/
+
+	return (myChar == toupper(myChar)) ? tolower(myChar) : toupper(myChar);
 }
 
 
